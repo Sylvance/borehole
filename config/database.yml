@@ -74,12 +74,15 @@ test:
 #   DATABASE_URL="postgres://myuser:mypass@localhost/somedatabase"
 #
 # You can use this database configuration with:
-#
-#   production:
-#     url: <%= ENV['DATABASE_URL'] %>
-#
+# #
+# #   production:
+# #     url: <%= ENV['DATABASE_URL'] %>
+# #
+# production:
+#   <<: *default
+#   database: borehole_production
+#   username: borehole
+#   password: <%= ENV['BOREHOLE_DATABASE_PASSWORD'] %>
+
 production:
-  <<: *default
-  database: borehole_production
-  username: borehole
-  password: <%= ENV['BOREHOLE_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
