@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Mpesa code:</strong>
+  <%= @payment.mpesa_code %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @payment.user_id %>
+</p>
+
+<p>
+  <strong>Transacted:</strong>
+  <%= @payment.transacted %>
+</p>
+
+<p>
+  <strong>Timed out:</strong>
+  <%= @payment.timed_out %>
+</p>
+
+<%= link_to 'Edit', edit_payment_path(@payment) %> |
+<%= link_to 'Back', payments_path %>
