@@ -25,6 +25,9 @@ gem 'bcrypt', '~> 3.1.7'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
+# Use Interactors
+gem 'interactor', '~> 3.0'
+
 # Mpesa connect integration
 gem 'mpesa_connect'
 
